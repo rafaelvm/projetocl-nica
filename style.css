@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+main {
+    color: #0000008c
+}
+
+/* INDEX HTML*/
+/* HEADER*/
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+.topo {
+    background-color: #00cad1;
+    width: 100%;
+  }
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+nav a:hover {
+    color: #0000008c;
+}
+
+/* CONTÉUDO */
+
+.photo1 {
+    background-image: url(./assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+
+}
+
+h1 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 10rem;
+    
+}
+
+/* Caracteristicas da clínica*/
+
+.about {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about p {
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem;
+}
+
+.about2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about2 img {
+    height: 300px;
+}
+
+h3 {
+    padding-right: 3rem;
+    font-weight: 500;
+}
+
+ul {
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+
+ul li {
+    padding: 0.2rem;
+}
+
+/* Especialidades da clínica*/
+
+.photos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.photo-especialidades {
+    margin: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 50%);
+    width: calc(100% / 3 - 40px);
+    
+}
+    
+
+.photo-especialidades img {
+    width: 100%;
+    
+}
+
+.photo-especialidades figcaption {
+    text-align: center;
+    margin-top: 0.7rem;
+    padding: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.horario {
+    text-align: center;
+    margin-top: 2.5rem;
+
+}
+
+.horario a {
+    text-decoration: none;
+    background-color: #00cad1;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.horario a:hover {
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/* Footer da página */
+
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    padding: 0.5rem;
+}
+
+/* RESPONSIVIDADE - MEDIAS QUERIES - INDEX*/
+
+@media (max-width: 1024px) {
+    .photo1 { height: 400px; }
+  }
+
+  @media (max-width: 768px) {
+    .photo1 { height: 300px}
+    .about2 img { display: none;}
+    .photos {justify-content: center;}
+    .photos-especialidade {
+      width: calc(100% / 2 - 40px);}
+}
+
+@media (max-width: 475px) {
+    .container {flex-flow: column wrap;}
+    nav {padding-bottom: 0.5rem;}
+    .photo1 {height: 300px;}
+    h1 {font-size: 28px;}
+    .photo-especialidades { width: 100%;}
+}
+
+/* ESPECIALIDADES HTML*/
+
+.links { 
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: #000;
+    text-decoration-color: #00cad1;
+    
+}
+
+.links:hover{
+    color: #0d6e71;
+  }
+
+.tabelas-container {
+    display: flex;
+    height: 240px;
+    padding: 0rem .5rem;
+}
+
+.tabelas-container img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabelas { 
+    text-align: left;
+    width: 90%;
+    height: 100%;
+}
+
+.tabelas thead tr {
+    background-color: #00cad1;
+    color: #fff;
+  }
+
+.tabelas tbody tr  {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabelas tbody tr td {
+
+    padding-left: 0.6rem;
+    
+}
+
+.tabelas tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+  }
+  
+/* RESPONSIVIDADE - MEDIAS QUERIES - ESPECIALIDADES*/
+
+@media (max-width: 768px) {
+    .tabelas-container img {
+      display: none;
+    }
+  
+    .tabelas {
+      width: 100%;
+    }
+  
+    .tabelas-container {
+      height: auto;
+      justify-content: center;
+    }
+  }
+
+  @media ( max-width: 425px) {
+    .tabelas-container {
+      padding: 0;
+    }
+  }
+
